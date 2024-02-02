@@ -1,6 +1,9 @@
 package net.GGM.projectmod;
 
 import com.mojang.logging.LogUtils;
+import net.GGM.projectmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -17,12 +20,13 @@ import org.slf4j.Logger;
 public class ProjectMod
 {
     public static final String MOD_ID = "projectmod";
-
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public ProjectMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -38,7 +42,9 @@ public class ProjectMod
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.MIECZ);
+        }
     }
 
     @SubscribeEvent
