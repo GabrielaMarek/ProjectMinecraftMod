@@ -2,6 +2,7 @@ package net.GGM.projectmod.item;
 
 import net.GGM.projectmod.ProjectMod;
 import net.GGM.projectmod.item.custom.FireSwordItem;
+import net.GGM.projectmod.item.custom.ModFoods;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,7 +19,11 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_BRICK = ITEMS.register("raw_brick",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> WSIZSANWICH = ITEMS.register("wsizsandwich",
+            () -> new Item(new Item.Properties().food(ModFoods.WSIZSANDWICH)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
+
 }
