@@ -36,6 +36,4 @@ public class FireSwordItem extends Item {
 
         return InteractionResultHolder.success(stack);
     }
-
-
 }
