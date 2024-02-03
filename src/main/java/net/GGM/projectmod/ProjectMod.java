@@ -1,8 +1,8 @@
 package net.GGM.projectmod;
 
 import com.mojang.logging.LogUtils;
+import net.GGM.projectmod.item.ModCreativeModTabs;
 import net.GGM.projectmod.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +25,8 @@ public class ProjectMod
     public ProjectMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
@@ -51,6 +53,10 @@ public class ProjectMod
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.KOSA);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.GLACIER_INGOT);
         }
 
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
