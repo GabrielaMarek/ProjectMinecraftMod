@@ -15,6 +15,9 @@ public class ModItems {
     public static final RegistryObject<Item> MIECZ = ITEMS.register("miecz",
             () -> new FireSwordItem(new Item.Properties().durability(100)));
 
+    public static final RegistryObject<Item> RAW_BRICK = ITEMS.register("raw_brick",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

@@ -45,6 +45,9 @@ public class ProjectMod
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.MIECZ);
         }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.RAW_BRICK);
+        }
     }
 
     @SubscribeEvent
