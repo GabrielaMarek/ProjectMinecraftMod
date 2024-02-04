@@ -5,15 +5,16 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Fireball;
 import net.minecraft.world.entity.projectile.SmallFireball;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
-public class FireSwordItem extends Item {
+public class FireSwordItem extends SwordItem {
 
-    public FireSwordItem(Properties pProperties) {
-        super(pProperties);
+    public FireSwordItem(Tier tier, int attackDamageIn, float attackSpeedIn, Properties builder) {
+        super(tier, attackDamageIn, attackSpeedIn, builder);
     }
 
     @Override

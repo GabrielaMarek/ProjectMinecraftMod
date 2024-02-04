@@ -1,6 +1,7 @@
 package net.GGM.projectmod.item;
 
 import net.GGM.projectmod.ProjectMod;
+import net.GGM.projectmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,8 +23,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.KOSA.get());
                         output.accept(ModItems.GLACIER_INGOT.get());
                         output.accept(ModItems.WSIZSANWICH.get());
+                        output.accept(ModBlocks.FIRE_ORE.get());
                     })
                     .build());
+
 
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);

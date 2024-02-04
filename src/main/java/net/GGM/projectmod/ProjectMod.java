@@ -1,6 +1,7 @@
 package net.GGM.projectmod;
 
 import com.mojang.logging.LogUtils;
+import net.GGM.projectmod.block.ModBlocks;
 import net.GGM.projectmod.item.ModCreativeModTabs;
 import net.GGM.projectmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,6 +30,7 @@ public class ProjectMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -54,7 +56,6 @@ public class ProjectMod
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.KOSA);
         }
-
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.GLACIER_INGOT);
         }
