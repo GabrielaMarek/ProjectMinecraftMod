@@ -30,9 +30,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> KOSA = ITEMS.register("kosa",
 
-            () -> new KosaItem(new Item.Properties()));
+            () -> new KosaItem(new Item.Properties().durability(80)));
 
     public static final RegistryObject<Item> GLACIER_INGOT = ITEMS.register("glacier_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GLACIER_SHARD = ITEMS.register("glacier_shard",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> WSIZSANWICH = ITEMS.register("wsizsandwich",

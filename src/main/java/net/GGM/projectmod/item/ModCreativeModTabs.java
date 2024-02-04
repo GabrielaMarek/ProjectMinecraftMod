@@ -20,10 +20,14 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.MIECZ.get());
                         output.accept(ModItems.RAW_BRICK.get());
+                        output.accept(ModBlocks.FIRE_ORE.get());
                         output.accept(ModItems.KOSA.get());
                         output.accept(ModItems.GLACIER_INGOT.get());
+                        output.accept(ModBlocks.GLACIER_ORE.get());
+                        output.accept(ModBlocks.GLACIER_BLOCK.get());
+                        output.accept(ModItems.GLACIER_SHARD.get());
                         output.accept(ModItems.WSIZSANWICH.get());
-                        output.accept(ModBlocks.FIRE_ORE.get());
+
                     })
                     .build());
 
