@@ -6,6 +6,7 @@ import net.GGM.projectmod.item.custom.FireSwordItem;
 import net.GGM.projectmod.item.custom.KosaItem;
 
 
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.HoeItem;
 
 import net.GGM.projectmod.item.custom.ModFoods;
@@ -41,7 +42,14 @@ public class ModItems {
     public static final RegistryObject<Item> WSIZSANWICH = ITEMS.register("wsizsandwich",
             () -> new Item(new Item.Properties().food(ModFoods.WSIZSANDWICH)));
 
-
+    public static final RegistryObject<Item> GLACIER_HELMET = ITEMS.register("glacier_helmet",
+            () -> new ArmorItem(ModArmorMaterials.GLACIER_INGOT, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> GLACIER_CHESTPLATE = ITEMS.register("glacier_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.GLACIER_INGOT, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> GLACIER_LEGGINS = ITEMS.register("glacier_leggins",
+            () -> new ArmorItem(ModArmorMaterials.GLACIER_INGOT, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> GLACIER_BOOTS = ITEMS.register("glacier_boots",
+            () -> new ArmorItem(ModArmorMaterials.GLACIER_INGOT, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

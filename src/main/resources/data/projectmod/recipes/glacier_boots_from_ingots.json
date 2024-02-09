@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "projectmod:glacier_ingot"
+    }
+  },
+  "result": {
+    "item": "projectmod:glacier_boots"
+  }
+}

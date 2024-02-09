@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    "CKb",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+    "C": {
+      "item": "minecraft:cooked_chicken"
+    },
+    "K": {
+      "item": "minecraft:kelp"
+    },
+    "b": {
+      "item": "minecraft:beetroot"
+    }
+  },
+  "result": {
+    "item": "projectmod:wsizsandwich"
+  }
+}

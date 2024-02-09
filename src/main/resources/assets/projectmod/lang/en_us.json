@@ -8,7 +8,10 @@
   "block.projectmod.glacier_ore": "Glacier Ore",
   "item.projectmod.glacier_shard": "Glacier Shard",
   "block.projectmod.glacier_block": "Glacier Block",
-
+  "item.projectmod.glacier_helmet": "Glacier Helmet",
+  "item.projectmod.glacier_chestplate": "Glacier Chestplate",
+  "item.projectmod.glacier_leggins": "Glacier Leggins",
+  "item.projectmod.glacier_boots": "Glacier Boots",
   "creativetab.project_tab": "Project Tab"
 
 }
