@@ -32,6 +32,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.GLACIER_LEGGINS.get());
                         output.accept(ModItems.GLACIER_BOOTS.get());
                         output.accept(ModItems.MINE_MASTER.get());
+                        output.accept(ModItems.PORTAL_STICK.get());
 
                     })
                     .build());

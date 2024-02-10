@@ -1,11 +1,8 @@
 package net.GGM.projectmod.item;
 
 import net.GGM.projectmod.ProjectMod;
-import net.GGM.projectmod.item.custom.MineMasterItem;
-import net.GGM.projectmod.item.custom.FireSwordItem;
-import net.GGM.projectmod.item.custom.KosaItem;
+import net.GGM.projectmod.item.custom.*;
 import net.minecraft.world.item.ArmorItem;
-import net.GGM.projectmod.item.custom.ModFoods;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -50,7 +47,7 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.GLACIER_INGOT, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static final RegistryObject<Item> PORTAL_STICK = ITEMS.register("portal_stick",
-            () -> new Item(new Item.Properties()));
+            () -> new PortalStickItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
