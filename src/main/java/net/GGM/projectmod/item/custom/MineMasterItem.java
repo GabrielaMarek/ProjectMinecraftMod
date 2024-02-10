@@ -69,15 +69,15 @@ public class MineMasterItem extends Item {
         if (block == Blocks.DIAMOND_ORE) {
             return new ItemStack(Items.DIAMOND);
         } else if (block == Blocks.IRON_ORE) {
-            return new ItemStack(Items.IRON_INGOT);
+            return new ItemStack(Items.RAW_IRON);
         } else if (block == Blocks.COAL_ORE) {
             return new ItemStack(Items.COAL);
         } else if (block == Blocks.EMERALD_ORE) {
             return new ItemStack(Items.EMERALD);
         } else if (block == Blocks.COPPER_ORE) {
-            return new ItemStack(Items.COPPER_INGOT);
+            return new ItemStack(Items.RAW_COPPER);
         } else if (block == Blocks.GOLD_ORE) {
-            return new ItemStack(Items.GOLD_INGOT);
+            return new ItemStack(Items.RAW_GOLD);
         } else if (block == Blocks.LAPIS_ORE) {
             return new ItemStack(Items.LAPIS_LAZULI);
         } else if (block == Blocks.REDSTONE_ORE) {
