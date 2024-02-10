@@ -51,6 +51,9 @@ public class ModItems {
     public static final RegistryObject<Item> GLACIER_BOOTS = ITEMS.register("glacier_boots",
             () -> new ArmorItem(ModArmorMaterials.GLACIER_INGOT, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> PORTAL_STICK = ITEMS.register("portal_stick",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
