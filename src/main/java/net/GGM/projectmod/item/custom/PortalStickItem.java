@@ -2,6 +2,8 @@ package net.GGM.projectmod.item.custom;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.player.Player;
@@ -40,6 +42,8 @@ public class PortalStickItem extends Item {
                 player.teleportTo(pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5);
 
                 generateLightning(world, pos);
+
+                player.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 190));
 
                 setCooldown(player);
 

@@ -47,7 +47,7 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.GLACIER_INGOT, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static final RegistryObject<Item> PORTAL_STICK = ITEMS.register("portal_stick",
-            () -> new PortalStickItem(new Item.Properties()));
+            () -> new PortalStickItem(new Item.Properties().durability(69)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
