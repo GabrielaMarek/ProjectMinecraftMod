@@ -1,16 +1,11 @@
 package net.GGM.projectmod.item;
 
 import net.GGM.projectmod.ProjectMod;
+import net.GGM.projectmod.item.custom.MineMasterItem;
 import net.GGM.projectmod.item.custom.FireSwordItem;
-
 import net.GGM.projectmod.item.custom.KosaItem;
-
-
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.HoeItem;
-
 import net.GGM.projectmod.item.custom.ModFoods;
-
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -38,6 +33,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> GLACIER_SHARD = ITEMS.register("glacier_shard",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MINE_MASTER = ITEMS.register("mine_master",
+            () -> new MineMasterItem(new Item.Properties().durability(100)));
 
     public static final RegistryObject<Item> WSIZSANWICH = ITEMS.register("wsizsandwich",
             () -> new Item(new Item.Properties().food(ModFoods.WSIZSANDWICH)));
