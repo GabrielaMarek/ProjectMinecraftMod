@@ -52,6 +52,9 @@ public class ModItems {
     public static final RegistryObject<Item> SUPER_SHOVEL = ITEMS.register("super_shovel",
             () -> new SuperShovelItem(new Item.Properties().durability(70)));
 
+    public static final RegistryObject<Item> FIRE_COAL = ITEMS.register("fire_coal",
+            () -> new FuelItem(new Item.Properties(), 1200));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
