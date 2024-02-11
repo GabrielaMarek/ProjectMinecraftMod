@@ -49,6 +49,9 @@ public class ModItems {
     public static final RegistryObject<Item> PORTAL_STICK = ITEMS.register("portal_stick",
             () -> new PortalStickItem(new Item.Properties().durability(69)));
 
+    public static final RegistryObject<Item> SUPER_SHOVEL = ITEMS.register("super_shovel",
+            () -> new SuperShovelItem(new Item.Properties().durability(70)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
